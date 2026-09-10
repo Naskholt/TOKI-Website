@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TÓKI — Thank You</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+       NAVIGATION
+  ========================== -->
+    <header class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="Toki" />
+      </a>
+
+      <nav>
+        <details class="services-menu">
+          <summary>services</summary>
+          <div class="services-dropdown">
+            <button
+              type="button"
+              class="services-close"
+              aria-label="Close services menu"
+              onclick="this.closest('details').removeAttribute('open')"
+            >
+              ×
+            </button>
+            <a href="packaging.html">Packaging</a>
+            <a href="product.html">Product</a>
+            <a href="sourcing.html">Sourcing</a>
+            <a href="suppliers.html">Suppliers</a>
+          </div>
+        </details>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="thank-you">
+        <div class="thank-you-image">
+          <img src="images/connie-contact.webp" alt="TÓKI House" />
+        </div>
+
+        <div class="thank-you-overlay"></div>
+
+        <div class="thank-you-content">
+          <h1>
+            THANK YOU FOR<br />
+            REACHING OUT!
+          </h1>
+
+          <p>
+            We’ve got your message and will get back to you within the next few
+            days. Talk soon!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+       FOOTER
+  ========================== -->
+    <footer id="contact">
+      <div class="footer-main">
+        <div class="footer-contact">
+          <p class="small-label">Let's connect</p>
+
+          <a href="mailto:hello@toki.house" class="footer-email">
+            hello@toki.house
+          </a>
+
+          <div class="footer-links">
+            <a href="#">services</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+          </div>
+
+          <div class="socials">
+            <a href="#" aria-label="Instagram">
+              <img src="images/instagram.webp" alt="Instagram" />
+            </a>
+            <a href="#">in</a>
+          </div>
+        </div>
+
+        <div class="footer-logo">
+          <img src="images/logo-footer.webp" alt="Toki" />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© TÓKI 2025　-　All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

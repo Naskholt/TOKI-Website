@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TÓKI — Homepage</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="manifest" href="images/site.webmanifest" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+       NAVIGATION
+  ========================== -->
+    <header class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="Toki" />
+      </a>
+
+      <nav>
+        <details class="services-menu">
+          <summary>services</summary>
+          <div class="services-dropdown">
+            <button
+              type="button"
+              class="services-close"
+              aria-label="Close services menu"
+              onclick="this.closest('details').removeAttribute('open')"
+            >
+              ×
+            </button>
+            <a href="packaging.html">Packaging</a>
+            <a href="product.html">Product</a>
+            <a href="sourcing.html">Sourcing</a>
+            <a href="suppliers.html">Suppliers</a>
+          </div>
+        </details>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </header>
+
+    <main class="home-page">
+      <!-- =========================
+       HERO / VIDEO
+  ========================== -->
+
+      <section class="home-hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="images/Logo_animation_05.mp4" type="video/mp4" />
+        </video>
+
+        <div class="hero-video-overlay"></div>
+
+        <!-- SMALL YELLOW CARD -->
+        <div class="hero-info-card">
+          <p>
+            TÓKI combines the right expertise, suppliers and solutions around
+            your specific packaging or product challenge.
+          </p>
+
+          <p>We're located in Copenhagen, Denmark.</p>
+
+          <a href="about.html" class="hero-read-more"> Read more </a>
+        </div>
+      </section>
+
+      <!-- =========================
+       SERVICES INTRO
+  ========================== -->
+
+      <section class="services-intro" id="services">
+        <h2>TÓKI IS A TOOL FOR CONNECTION</h2>
+
+        <p>
+          A consultancy that combines the right expertise, suppliers and
+          solutions around your specific packaging or product challenge.
+        </p>
+      </section>
+
+      <!-- =========================
+       SERVICES
+  ========================== -->
+
+      <section class="services-grid">
+        <!-- PACKAGING -->
+        <a href="packaging.html" class="service-card">
+          <div class="service-image">
+            <img src="images/packaging-1.webp" alt="Packaging" />
+            <div class="service-hover-text">
+              <p>Developing packaging that fits</p>
+              <p>Working with designers to bring the brand to life</p>
+            </div>
+          </div>
+
+          <h3>Packaging</h3>
+        </a>
+
+        <!-- PRODUCTS -->
+        <a href="product.html" class="service-card">
+          <div class="service-image">
+            <img src="images/home-page-products.webp" alt="Products" />
+            <div class="service-hover-text">
+              <p>Turning ideas into finished products</p>
+            </div>
+          </div>
+
+          <h3>Products</h3>
+        </a>
+
+        <!-- SUPPLIERS -->
+        <a href="suppliers.html" class="service-card">
+          <div class="service-image">
+            <img src="images/home-page-suppliers.webp" alt="Suppliers" />
+            <div class="service-hover-text">
+              <p>Finding reliable partners</p>
+            </div>
+          </div>
+
+          <h3>Suppliers</h3>
+        </a>
+
+        <!-- SOURCING -->
+        <a href="sourcing.html" class="service-card">
+          <div class="service-image">
+            <img src="images/home-page-sourcing.webp" alt="Sourcing" />
+            <div class="service-hover-text">
+              <p>Finding the right connections</p>
+              <p>Coordinate across the production</p>
+            </div>
+          </div>
+
+          <h3>Sourcing</h3>
+        </a>
+      </section>
+
+      <!-- =========================
+       WORK STRIP
+  ========================== -->
+
+      <section class="home-work">
+        <p class="work-scroll-hint">Scroll to explore <span>→</span></p>
+
+        <div class="work-strip">
+          <article class="work-strip-card">
+            <img src="images/product-1.webp" alt="Mocles product design" />
+            <div class="work-strip-caption">
+              <strong>Mocles</strong>
+              <span>Product Development</span>
+            </div>
+          </article>
+
+          <article class="work-strip-card">
+            <img src="images/product-2.webp" alt="Ollie product design" />
+            <div class="work-strip-caption">
+              <strong>Ollie</strong>
+              <span>Product Design</span>
+            </div>
+          </article>
+
+          <article class="work-strip-card">
+            <img
+              src="images/sourcing-example-1.webp"
+              alt="Melts product design"
+            />
+            <div class="work-strip-caption">
+              <strong>Melts</strong>
+              <span>Brand Expression</span>
+            </div>
+          </article>
+
+          <article class="work-strip-card">
+            <img src="images/example-1.webp" alt="BIGFACE packaging project" />
+            <div class="work-strip-caption">
+              <strong>BIGFACE</strong>
+              <span>Sourcing</span>
+            </div>
+          </article>
+
+          <article class="work-strip-card">
+            <img src="images/example-3.webp" alt="Lesse packaging project" />
+            <div class="work-strip-caption">
+              <strong>Lesse</strong>
+              <span>Supplier Matching</span>
+            </div>
+          </article>
+
+          <article class="work-strip-card">
+            <img
+              src="images/product-example-1.webp"
+              alt="Abel product design"
+            />
+            <div class="work-strip-caption">
+              <strong>Abel</strong>
+              <span>Supplier Partnerships</span>
+            </div>
+          </article>
+
+          <article class="work-strip-card">
+            <img src="images/product-hero.webp" alt="Twelve product design" />
+            <div class="work-strip-caption">
+              <strong>Twelve</strong>
+              <span>Production Support</span>
+            </div>
+          </article>
+
+          <article class="work-strip-card">
+            <img src="images/workstrip-1.webp" alt="REOME product design" />
+            <div class="work-strip-caption">
+              <strong>REOME</strong>
+              <span>Packaging design & Sourcing</span>
+            </div>
+          </article>
+
+          <article class="work-strip-card">
+            <img src="images/workstrip-2.webp" alt="Soma product design" />
+            <div class="work-strip-caption">
+              <strong>Soma</strong>
+              <span>Product design & Supplier</span>
+            </div>
+          </article>
+
+          <article class="work-strip-card">
+            <img src="images/workstrip-3.webp" alt="N03 product" />
+            <div class="work-strip-caption">
+              <strong>N03</strong>
+              <span>Brand Expression</span>
+            </div>
+          </article>
+
+          <article class="work-strip-card">
+            <img
+              src="images/workstrip-4.webp"
+              alt="Aliveform product project"
+            />
+            <div class="work-strip-caption">
+              <strong>Aliveform</strong>
+              <span>Product Sourcing</span>
+            </div>
+          </article>
+
+          <article class="work-strip-card">
+            <img src="images/workstrip-5.webp" alt="Lesse product project" />
+            <div class="work-strip-caption">
+              <strong>WAX Atelier</strong>
+              <span>Product design</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="work-button-wrapper">
+          <a href="about.html" class="work-button"> See more work </a>
+        </div>
+      </section>
+
+      <!-- =========================
+       SURVEY INTRO
+  ========================== -->
+
+      <section class="survey-section" id="survey">
+        <div class="survey-heading">
+          <h2>
+            TÓKI can help you define your problem -
+            <br />
+            Let’s start from the beginning
+          </h2>
+        </div>
+
+        <!-- =========================
+         SURVEY
+    ========================== -->
+
+        <div class="survey-box">
+          <!-- QUESTION 1 -->
+          <div class="survey-step active" data-step="1">
+            <div class="survey-left">
+              <p class="survey-label">Question 1 of 3</p>
+
+              <h2>
+                Where are you<br />
+                at right now?
+              </h2>
+            </div>
+
+            <div class="survey-right">
+              <div class="survey-options">
+                <button type="button" class="survey-option" data-value="idea">
+                  We have an idea
+                </button>
+
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="production-ready"
+                >
+                  Ready for production
+                </button>
+
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="concept"
+                >
+                  We have a concept
+                </button>
+
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="producing"
+                >
+                  Already producing
+                </button>
+
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="developing"
+                >
+                  We’re developing
+                </button>
+
+                <button type="button" class="survey-option" data-value="other">
+                  Other
+                </button>
+              </div>
+
+              <button type="button" class="survey-next" data-next="2">
+                Next question
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- QUESTION 2 -->
+          <div class="survey-step" data-step="2">
+            <div class="survey-left">
+              <p class="survey-label">Question 2 of 3</p>
+
+              <h2>
+                What are you<br />
+                currently<br />
+                working on?
+              </h2>
+            </div>
+
+            <div class="survey-right">
+              <div class="survey-options">
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="product"
+                >
+                  A new product
+                </button>
+
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="production"
+                >
+                  Production change
+                </button>
+
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="sourcing"
+                >
+                  Sourcing
+                </button>
+
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="suppliers"
+                >
+                  Suppliers
+                </button>
+
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="existing-product"
+                >
+                  Existing product
+                </button>
+
+                <button type="button" class="survey-option" data-value="other">
+                  Other
+                </button>
+              </div>
+
+              <button type="button" class="survey-next" data-next="3">
+                Next question
+                <span>→</span>
+              </button>
+              <button type="button" class="survey-back" data-previous="1">
+                <span>←</span>
+                Back
+              </button>
+            </div>
+          </div>
+
+          <!-- QUESTION 3 -->
+          <div class="survey-step" data-step="3">
+            <div class="survey-left">
+              <p class="survey-label">Question 3 of 3</p>
+
+              <h2>
+                What kind of<br />
+                support do you<br />
+                need?
+              </h2>
+            </div>
+
+            <div class="survey-right">
+              <div class="survey-options">
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="product"
+                >
+                  Develop a product
+                </button>
+
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="packaging"
+                >
+                  Improve packaging
+                </button>
+
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="sourcing"
+                >
+                  Find materials
+                </button>
+
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="suppliers"
+                >
+                  Find suppliers
+                </button>
+
+                <button
+                  type="button"
+                  class="survey-option"
+                  data-value="production"
+                >
+                  Prepare for production
+                </button>
+
+                <button type="button" class="survey-option" data-value="other">
+                  I’m not sure yet
+                </button>
+              </div>
+
+              <button type="button" class="survey-next" data-next="4">
+                See your result
+                <span>→</span>
+              </button>
+              <button type="button" class="survey-back" data-previous="2">
+                <span>←</span>
+                Back
+              </button>
+            </div>
+          </div>
+
+          <!-- RESULT -->
+          <div class="survey-step survey-result" data-step="4">
+            <div class="survey-left">
+              <h2>Your result ~</h2>
+            </div>
+
+            <div class="survey-right result-content">
+              <h3>
+                Looks like you need help with
+                <br />
+                <span id="survey-result-service"> PACKAGING </span>
+              </h3>
+
+              <p>Lucky you! TÓKI can help you with that.</p>
+
+              <p>
+                Reach out to us —
+                <br />
+                We would love to arrange a meeting with you and find out more
+                about your brand.
+              </p>
+
+              <a href="contact.html" class="result-button"> Let’s connect! </a>
+              <button
+                type="button"
+                class="survey-back result-back"
+                data-previous="3"
+              >
+                <span>←</span>
+                Back
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Back to top -->
+    </main>
+    <a href="#" class="back-top">↑</a>
+    <!-- =========================
+       FOOTER
+  ========================== -->
+    <footer id="contact">
+      <div class="footer-main">
+        <div class="footer-contact">
+          <p class="small-label">Let's connect</p>
+
+          <a href="mailto:hello@toki.house" class="footer-email">
+            hello@toki.house
+          </a>
+
+          <div class="footer-links">
+            <a href="#">services</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+          </div>
+
+          <div class="socials">
+            <a href="#" aria-label="Instagram">
+              <img src="images/instagram.webp" alt="Instagram" />
+            </a>
+            <a href="#">in</a>
+          </div>
+        </div>
+
+        <div class="footer-logo">
+          <img src="images/logo-footer.webp" alt="Toki" />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© TÓKI 2025　-　All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const surveySteps = document.querySelectorAll(".survey-step");
+      const surveyOptions = document.querySelectorAll(".survey-option");
+      const surveyResult = document.getElementById("survey-result-service");
+      const surveyAnswers = {};
+
+      surveyOptions.forEach((option) => {
+        option.addEventListener("click", () => {
+          const step = option.closest(".survey-step");
+
+          step.querySelectorAll(".survey-option").forEach((item) => {
+            item.classList.remove("selected");
+          });
+
+          option.classList.add("selected");
+          surveyAnswers[step.dataset.step] = option.dataset.value;
+        });
+      });
+
+      document.querySelectorAll(".survey-next").forEach((button) => {
+        button.addEventListener("click", () => {
+          const currentStep = button.closest(".survey-step");
+          const nextStep = button.dataset.next;
+
+          if (!surveyAnswers[currentStep.dataset.step]) {
+            currentStep.classList.add("needs-answer");
+            return;
+          }
+
+          currentStep.classList.remove("needs-answer");
+
+          if (nextStep === "4") {
+            const serviceMap = {
+              product: "PRODUCT",
+              packaging: "PACKAGING",
+              production: "PACKAGING",
+              sourcing: "SOURCING",
+              suppliers: "SUPPLIERS",
+              "existing-product": "PRODUCT",
+              other: "PACKAGING",
+            };
+
+            const service =
+              serviceMap[surveyAnswers["3"]] ||
+              serviceMap[surveyAnswers["2"]] ||
+              "PACKAGING";
+            surveyResult.textContent = service;
+          }
+
+          surveySteps.forEach((step) => {
+            step.classList.toggle("active", step.dataset.step === nextStep);
+          });
+        });
+      });
+
+      document.querySelectorAll(".survey-back").forEach((button) => {
+        button.addEventListener("click", () => {
+          const currentStep = button.closest(".survey-step");
+          const previousStep = button.dataset.previous;
+
+          currentStep.classList.remove("needs-answer");
+          surveySteps.forEach((step) => {
+            step.classList.toggle("active", step.dataset.step === previousStep);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

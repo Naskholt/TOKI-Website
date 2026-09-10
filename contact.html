@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TÓKI — Packaging</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+       NAVIGATION
+  ========================== -->
+    <header class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="Toki" />
+      </a>
+
+      <nav>
+        <details class="services-menu">
+          <summary>services</summary>
+          <div class="services-dropdown">
+            <button type="button" class="services-close" aria-label="Close services menu" onclick="this.closest('details').removeAttribute('open')">×</button>
+            <a href="packaging.html">Packaging</a>
+            <a href="product.html">Product</a>
+            <a href="sourcing.html">Sourcing</a>
+            <a href="suppliers.html">Suppliers</a>
+          </div>
+        </details>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </header>
+    <main class="contact-page">
+ <section class="contact-section">
+  <h1>CONTACT ME.</h1>
+
+  <div class="contact-layout">
+    <div class="contact-spacer"></div>
+
+    <div class="contact-content">
+      <div class="contact-intro">
+        <p>
+          Have a question, a challenge or just an idea you want to explore?
+          <br />
+          We’d love to hear from you.
+        </p>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <form class="contact-form" id="contactForm">
+
+        <div class="name-row">
+
+          <div class="form-group">
+            <label for="first-name">First name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Last name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              required
+            />
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="contact-button">
+          Say hello!
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+</section>
+<a href="#" class="back-top">↑</a>
+
+<script>
+  const contactForm = document.getElementById("contactForm");
+
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    if (contactForm.checkValidity()) {
+      window.location.href = "thank-you.html";
+    } else {
+      contactForm.reportValidity();
+    }
+  });
+</script>
+    <!-- =========================
+       FOOTER
+  ========================== -->
+    <footer id="contact">
+      <div class="footer-main">
+        <div class="footer-contact">
+          <p class="small-label">Let's connect</p>
+
+          <a href="mailto:hello@toki.house" class="footer-email">
+            hello@toki.house
+          </a>
+
+          <div class="footer-links">
+            <a href="#">services</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+          </div>
+
+          <div class="socials">
+            <a href="#" aria-label="Instagram">
+              <img src="images/instagram.webp" alt="Instagram" />
+            </a>
+            <a href="#">in</a>
+          </div>
+        </div>
+
+        <div class="footer-logo">
+          <img src="images/logo-footer.webp" alt="Toki" />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© TÓKI 2025　-　All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
